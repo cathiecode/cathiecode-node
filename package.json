@@ -3,6 +3,7 @@
   "author": "cathiecode",
   "license": "CC0-1.0",
   "description": "",
+  "private": "true",
   "scripts": {
     "build": "tsc",
     "dev": "nodemon"
