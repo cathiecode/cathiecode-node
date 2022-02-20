@@ -1,0 +1,10 @@
+{
+  "main": "dist/index.js",
+  "author": "cathiecode",
+  "license": "CC0-1.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon"
+  }
+}
