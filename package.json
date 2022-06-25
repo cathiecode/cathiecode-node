@@ -1,10 +1,11 @@
 {
-  "main": "dist/index.js",
+  "main": "build/index.js",
   "author": "cathiecode",
   "license": "CC0-1.0",
   "private": "true",
+  "type": "module",
   "scripts": {
-    "build": "tsc",
-    "dev": "nodemon"
+    "build": "tsc && esbuild src/index.ts --outfile=build/index.js --sourcemap --bundle",
+    "dev": "concurrently 'esbuild src/index.ts --outfile=build/index.js --sourcemap --bundle --watch' 'nodemon'"
   }
 }
